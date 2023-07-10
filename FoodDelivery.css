@@ -1,0 +1,126 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ /* Styling Navbar */
+#navbar{
+    display: flex;
+    position: relative;
+}
+
+#logo{
+    margin: 10px 34px ;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.95;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#navbar ul li a{
+    display: block;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Styling Section- Home */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 4px 80px;
+    height: 445px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before{
+    content: "";
+    background: url("/bg2.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Services Section */
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+.box{
+    border: 2px solid brown;
+    margin: 0px 6px;
+    padding: 34px;
+    border-radius: 23px;
+    background-color: rgb(245, 215, 177);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.box img{
+    display: block;
+    height: 150px;
+    margin: auto;
+}
+.h-primary{
+    font-size: 2.9rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-size: 2.5rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: crimson;
+    color: white;
+    border-radius: 20px;
+    margin: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
